@@ -1,3 +1,6 @@
 variable "provider_region" {}
 
 variable "bucket_remote_state" {}
+
+variable "az_count" {}
+variable "az_names" {}
