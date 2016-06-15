@@ -1,6 +1,7 @@
 {
   "require": [
     "wtf",
-    "module-aws-global"
+    "module-aws-global",
+    "env-xxx"
   ]
 }
