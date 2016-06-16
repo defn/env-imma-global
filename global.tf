@@ -1,1 +1,1 @@
-../module-aws-global/global.tf
+../global-xxx/global.tf
