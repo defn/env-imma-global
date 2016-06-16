@@ -1,11 +1,14 @@
 provider "aws" { }
 
+variable "az_names" {
+  default = [ "us-west-1b", "us-west-1c" ]
+}
+
 module "global" {
   source = "../module-aws-global"
 
   bucket_remote_state = "${var.bucket_remote_state}"
   az_names = "${var.az_names}"
-  az_count = "${length(split(" ",var.az_names))}"
 }
 
 output "bucket_remote_state" {
